@@ -5,7 +5,11 @@
 		<title>Test SQL Stuff</title>
 	</head>
 	<body>
-		<p class="swag">swag</p>
-		<button id="btnCreateDB" onclick="createDB()">Swag Button</button>
+		<form method="post" action="process.php">
+			<label>Database Name</label>
+			<input type="text" name="database_name" />
+			<br />
+			<input type="submit" value="Add Database">
+		</form>
 	</body>
 </html>
