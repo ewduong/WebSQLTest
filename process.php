@@ -1,15 +1,5 @@
 <?php
-
-//print_r($_POST);
-
-$mysql_host = "localhost";
-$mysql_user = "root";
-$mysql_pass = "root";
-$database_name = $_POST['database_name'];
-
-$connect=mysql_connect($mysql_host, $mysql_user, $mysql_pass) or
-die("Could not connect: " . mysql_error());
-echo 'Connected! <br>';
+include 'database.php';
 
 $db_selected = mysql_select_db($database_name, $connect);
 
